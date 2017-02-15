@@ -67,6 +67,8 @@ module.exports = {
         var ScmDataGenerator = this.readConfig('scm');
         if (ScmDataGenerator) {
           var path = this.readConfig('rootDir');
+          console.log("PATH:");
+          console.log(path);
           return new ScmDataGenerator(path).generate();
         } else {
           return Promise.resolve();
