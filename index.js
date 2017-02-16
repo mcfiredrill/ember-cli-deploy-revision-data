@@ -24,7 +24,7 @@ module.exports = {
         },
 
         rootDir: function(context) {
-          return context.project.root;
+          return context.project.getProjectRoot();
         },
 
         scm: function(context) {
